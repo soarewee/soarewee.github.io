@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 6rem;
+         font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  h1 { font-size: 1.9rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.25rem; }
+  .sub { color: #888; margin-top: 0; }
+  code { font-size: .9em; padding: .1em .35em; border-radius: 3px;
+         background: rgba(127,127,127,.18); }
+  ul { padding-left: 1.25rem; }
+  footer { margin-top: 3rem; font-size: .875rem; color: #888; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="sub">Personal Google API client &mdash; last updated 17 November 2026</p>
+
+<h2>Who this covers</h2>
+<p>
+  This policy describes a <strong>personal, single-user application</strong>
+  operated by the owner of this site. It is not a product, it is not offered to
+  other people, and it has no other users. It exists so that its operator can
+  access <em>his own</em> Google account data from software running on his own
+  computer.
+</p>
+
+<h2>What data is accessed</h2>
+<p>The application requests these Google OAuth scopes:</p>
+<ul>
+  <li><code>gmail.readonly</code>, <code>gmail.send</code>, <code>gmail.modify</code> &mdash; reading, sending and labelling the operator's own mail</li>
+  <li><code>calendar</code> &mdash; reading and writing the operator's own calendar events</li>
+</ul>
+<p>
+  Only the account that grants consent is accessed. The application cannot and
+  does not access anyone else's Google account.
+</p>
+
+<h2>Where data goes</h2>
+<p>
+  Mail and calendar data is fetched on demand to the operator's personal
+  computer and used there. OAuth refresh tokens are stored in a file on that
+  computer's local filesystem.
+</p>
+<p>
+  There is <strong>no server</strong>. No backend receives this data, no
+  database stores it, and no analytics or tracking is performed. Nothing is
+  sold, rented, shared with third parties, or used for advertising, and no
+  Google user data is used to train machine learning models.
+</p>
+<p>
+  Content the operator explicitly chooses to process may be sent to a
+  third-party AI model provider for that single request. This happens only on
+  the operator's own instruction, for his own data, and is not retained by this
+  application.
+</p>
+
+<h2>Retention and deletion</h2>
+<p>
+  Nothing is retained beyond the local token file and whatever the operator
+  saves himself. Access can be withdrawn at any time, which immediately and
+  permanently ends the application's ability to read anything:
+</p>
+<ul>
+  <li>revoke it at <a href="https://myaccount.google.com/connections">Google Account &rarr; Data &amp; privacy &rarr; Third-party apps</a>, or</li>
+  <li>delete the local token file.</li>
+</ul>
+
+<h2>Limited Use</h2>
+<p>
+  Use and transfer of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+  including its Limited Use requirements.
+</p>
+
+<h2>Contact</h2>
+<p>
+  Questions about this policy can be directed to the site owner via
+  <a href="https://github.com/soarewee">github.com/soarewee</a>.
+</p>
+
+<footer>
+  <a href="/">&larr; Back to site</a>
+</footer>
+
+</body>
+</html>
